@@ -13,8 +13,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 450px;
-  height: 410px;
+  max-width: 450px;
+  width: 100%;
+  height: 100%;
+  max-height: 410px;
+  min-height: 230px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-shadow: 0px 0px 4px rgba(20, 20, 20, 0.1),
@@ -22,6 +25,7 @@
   border-radius: 6px;
   padding: 20px;
   padding-top: 10px;
+  margin: auto 24px;
 }
 
 .box-group {
@@ -94,6 +98,10 @@
 .box-group:hover input:checked + label:before {
   border: 1.8px solid #5087f8;
   background-color: #5087f8;
+}
+.box-group:active input:checked + label:before {
+  border: 1.8px solid #2469f6;
+  background-color: #2469f6;
 }
 
 .box-group input:hover + label:after {
